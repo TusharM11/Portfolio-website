@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,113 +6,116 @@ html
     <title>Tushar Mongia's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Tushar Mongia's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#involvement">Involvement</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="experience">Experience</a></li>
+                <li><a href="#" data-section="projects">Projects</a></li>
+                <li><a href="#" data-section="education">Education</a></li>
+                <li><a href="#" data-section="certifications">Certifications</a></li>
+                <li><a href="#" data-section="involvement">Involvement</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <h2>Welcome</h2>
-        <p>Hello! I'm Tushar Mongia, an aspiring aerospace engineer. Explore my portfolio to know more about my experience, projects, and skills.</p>
-    </section>
+    <main>
+        <section id="home" class="content active">
+            <h2>Welcome</h2>
+            <p>Hello! I'm Tushar Mongia, an aspiring aerospace engineer. Explore my portfolio to know more about my experience, projects, and skills.</p>
+        </section>
 
-    <section id="experience" class="content">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Deputy Project Manager, System Lead Engineer, Propulsion and Power System</h3>
-            <p><strong>Team AeroAstro</strong> - Sep 2022—Present, RVCE, Bengaluru</p>
+        <section id="experience" class="content">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Deputy Project Manager, System Lead Engineer, Propulsion and Power System</h3>
+                <p><strong>Team AeroAstro</strong> - Sep 2022—Present, RVCE, Bengaluru</p>
+                <ul>
+                    <li>Managing as Propulsion and Power Engineer for Project MO-23, an EVTOL under development.</li>
+                    <li>Represented Team AeroAstro in NASA Space App challenge.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Technical Team Member</h3>
+                <p><strong>Team Vyoma</strong> - Aug 2022—Present, RVCE, Bengaluru</p>
+                <ul>
+                    <li>Designed an RC plane for various competitions, conducted simulation analysis, created 2D drawings, and performed CAD modelling using SolidWorks Software.</li>
+                    <li>Participated in Boeing aeromodelling competition held at IIT Madras (Secured in top 20 teams out of 600 participants).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Transform to Open Science (TOPS)</h3>
+                <p>Gained valuable knowledge on the Ethos of Open Science and overview on how to sensibly produce and share research. Working to increase audience reach and get exposure to work with more like-minded collaborators.</p>
+            </div>
+
+            <div class="project">
+                <h3>ALGORITHM</h3>
+                <p>Part of the ALGORITHM team working on the solution to the space debris mechanism with international collaboration.</p>
+            </div>
+        </section>
+
+        <section id="education" class="content">
+            <h2>Education</h2>
+            <div class="education-item">
+                <p><strong>Bachelor of Engineering in Aerospace Engineering</strong></p>
+                <p>R.V College of Engineering, Bengaluru, INDIA (2022—2026)</p>
+                <p>Relevant Coursework: Aerospace Propulsion, Aerospace Structures, Fluid Mechanics, Aerodynamics, Finite Element Analysis.</p>
+            </div>
+
+            <div class="education-item">
+                <p><strong>Class 12</strong>: Physics, Chemistry, Mathematics, English, Psychology, Physical Education</p>
+                <p>Hayde Heritage Academy, Kotdwara, INDIA - 2021, Percentage: 95%</p>
+            </div>
+
+            <div class="education-item">
+                <p><strong>Class 10</strong>: Science Stream</p>
+                <p>Hayde Heritage Academy, Kotdwara, INDIA - 2019, Percentage: 94%</p>
+            </div>
+        </section>
+
+        <section id="certifications" class="content">
+            <h2>Certifications</h2>
             <ul>
-                <li>Managing as Propulsion and Power Engineer for Project MO-23, an EVTOL under development.</li>
-                <li>Represented Team AeroAstro in NASA Space App challenge.</li>
+                <li>3D SWYMER ASSOCIATE</li>
+                <li>MATLAB ONRAMP</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="job">
-            <h3>Technical Team Member</h3>
-            <p><strong>Team Vyoma</strong> - Aug 2022—Present, RVCE, Bengaluru</p>
+        <section id="involvement" class="content">
+            <h2>Involvement</h2>
             <ul>
-                <li>Designed an RC plane for various competitions, conducted simulation analysis, created 2D drawings, and performed CAD modelling using SolidWorks Software.</li>
-                <li>Participated in Boeing aeromodelling competition held at IIT Madras (Secured in top 20 teams out of 600 participants).</li>
+                <li>Student Affiliate - Royal Aeronautical Society</li>
+                <li>Head Boy - Hayde Heritage Academy (Batch - 2020/21)</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="content">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Transform to Open Science (TOPS)</h3>
-            <p>Gained valuable knowledge on the Ethos of Open Science and overview on how to sensibly produce and share research. Working to increase audience reach and get exposure to work with more like-minded collaborators.</p>
-        </div>
+        <section id="skills" class="content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Fluent in English and Hindi</li>
+                <li>Software: SOLIDWORKS, XFLR5, XFLOW, MATLAB, PYTHON</li>
+                <li>Activities: Organizer - Rotaract, Member - NSS (National Service Scheme)</li>
+            </ul>
+        </section>
 
-        <div class="project">
-            <h3>ALGORITHM</h3>
-            <p>Part of the ALGORITHM team working on the solution to the space debris mechanism with international collaboration.</p>
-        </div>
-    </section>
-
-    <section id="education" class="content">
-        <h2>Education</h2>
-        <div class="education-item">
-            <p><strong>Bachelor of Engineering in Aerospace Engineering</strong></p>
-            <p>R.V College of Engineering, Bengaluru, INDIA (2022—2026)</p>
-            <p>Relevant Coursework: Aerospace Propulsion, Aerospace Structures, Fluid Mechanics, Aerodynamics, Finite Element Analysis.</p>
-        </div>
-
-        <div class="education-item">
-            <p><strong>Class 12</strong>: Physics, Chemistry, Mathematics, English, Psychology, Physical Education</p>
-            <p>Hayde Heritage Academy, Kotdwara, INDIA - 2021, Percentage: 95%</p>
-        </div>
-
-        <div class="education-item">
-            <p><strong>Class 10</strong>: Science Stream</p>
-            <p>Hayde Heritage Academy, Kotdwara, INDIA - 2019, Percentage: 94%</p>
-        </div>
-    </section>
-
-    <section id="certifications" class="content">
-        <h2>Certifications</h2>
-        <ul>
-            <li>3D SWYMER ASSOCIATE</li>
-            <li>MATLAB ONRAMP</li>
-        </ul>
-    </section>
-
-    <section id="involvement" class="content">
-        <h2>Involvement</h2>
-        <ul>
-            <li>Student Affiliate - Royal Aeronautical Society</li>
-            <li>Head Boy - Hayde Heritage Academy (Batch - 2020/21)</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="content">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Fluent in English and Hindi</li>
-            <li>Software: SOLIDWORKS, XFLR5, XFLOW, MATLAB, PYTHON</li>
-            <li>Activities: Organizer - Rotaract, Member - NSS (National Service Scheme)</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="content contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:tusharmongia.ae22@rvce.edu.in">tusharmongia.ae22@rvce.edu.in</a></p>
-        <p>Phone: +91 7895172275</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tusharm11/">https://www.linkedin.com/in/tusharm11/</a></p>
-    </section>
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:tusharmongia.ae22@rvce.edu.in">tusharmongia.ae22@rvce.edu.in</a></p>
+            <p>Phone: +91 7895172275</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tusharm11/">https://www.linkedin.com/in/tusharm11/</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Tushar Mongia - Aerospace Engineering Portfolio</p>
