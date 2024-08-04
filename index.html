@@ -1,3 +1,8 @@
+Sure, I can provide an enhanced version of the website with additional themes and better section separation. Here's an improved version of the HTML and CSS code:
+
+### Enhanced Index.html
+
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,70 +10,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tushar Mongia's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Tushar Mongia's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#involvement">Involvement</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#involvement">Involvement</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
+    <section id="home" class="hero">
         <h2>Welcome</h2>
         <p>Hello! I'm Tushar Mongia, an aspiring aerospace engineer. Explore my portfolio to know more about my experience, projects, and skills.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="content">
         <h2>Experience</h2>
-        <h3>Deputy Project Manager, System Lead Engineer, Propulsion and Power System</h3>
-        <p><strong>Team AeroAstro</strong> - Sep 2022—Present, RVCE, Bengaluru</p>
-        <ul>
-            <li>Managing as Propulsion and Power Engineer for Project MO-23, an EVTOL under development.</li>
-            <li>Represented Team AeroAstro in NASA Space App challenge.</li>
-        </ul>
+        <div class="job">
+            <h3>Deputy Project Manager, System Lead Engineer, Propulsion and Power System</h3>
+            <p><strong>Team AeroAstro</strong> - Sep 2022—Present, RVCE, Bengaluru</p>
+            <ul>
+                <li>Managing as Propulsion and Power Engineer for Project MO-23, an EVTOL under development.</li>
+                <li>Represented Team AeroAstro in NASA Space App challenge.</li>
+            </ul>
+        </div>
 
-        <h3>Technical Team Member</h3>
-        <p><strong>Team Vyoma</strong> - Aug 2022—Present, RVCE, Bengaluru</p>
-        <ul>
-            <li>Designed an RC plane for various competitions, conducted simulation analysis, created 2D drawings, and performed CAD modelling using SolidWorks Software.</li>
-            <li>Participated in Boeing aeromodelling competition held at IIT Madras (Secured in top 20 teams out of 600 participants).</li>
-        </ul>
+        <div class="job">
+            <h3>Technical Team Member</h3>
+            <p><strong>Team Vyoma</strong> - Aug 2022—Present, RVCE, Bengaluru</p>
+            <ul>
+                <li>Designed an RC plane for various competitions, conducted simulation analysis, created 2D drawings, and performed CAD modelling using SolidWorks Software.</li>
+                <li>Participated in Boeing aeromodelling competition held at IIT Madras (Secured in top 20 teams out of 600 participants).</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="content">
         <h2>Projects</h2>
-        <h3>Transform to Open Science (TOPS)</h3>
-        <p>Gained valuable knowledge on the Ethos of Open Science and overview on how to sensibly produce and share research. Working to increase audience reach and get exposure to work with more like-minded collaborators.</p>
+        <div class="project">
+            <h3>Transform to Open Science (TOPS)</h3>
+            <p>Gained valuable knowledge on the Ethos of Open Science and overview on how to sensibly produce and share research. Working to increase audience reach and get exposure to work with more like-minded collaborators.</p>
+        </div>
 
-        <h3>ALGORITHM</h3>
-        <p>Part of the ALGORITHM team working on the solution to the space debris mechanism with international collaboration.</p>
+        <div class="project">
+            <h3>ALGORITHM</h3>
+            <p>Part of the ALGORITHM team working on the solution to the space debris mechanism with international collaboration.</p>
+        </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="content">
         <h2>Education</h2>
-        <p><strong>Bachelor of Engineering in Aerospace Engineering</strong></p>
-        <p>R.V College of Engineering, Bengaluru, INDIA (2022—2026)</p>
-        <p>Relevant Coursework: Aerospace Propulsion, Aerospace Structures, Fluid Mechanics, Aerodynamics, Finite Element Analysis.</p>
+        <div class="education-item">
+            <p><strong>Bachelor of Engineering in Aerospace Engineering</strong></p>
+            <p>R.V College of Engineering, Bengaluru, INDIA (2022—2026)</p>
+            <p>Relevant Coursework: Aerospace Propulsion, Aerospace Structures, Fluid Mechanics, Aerodynamics, Finite Element Analysis.</p>
+        </div>
 
-        <p><strong>Class 12</strong>: Physics, Chemistry, Mathematics, English, Psychology, Physical Education</p>
-        <p>Hayde Heritage Academy, Kotdwara, INDIA - 2021, Percentage: 95%</p>
+        <div class="education-item">
+            <p><strong>Class 12</strong>: Physics, Chemistry, Mathematics, English, Psychology, Physical Education</p>
+            <p>Hayde Heritage Academy, Kotdwara, INDIA - 2021, Percentage: 95%</p>
+        </div>
 
-        <p><strong>Class 10</strong>: Science Stream</p>
-        <p>Hayde Heritage Academy, Kotdwara, INDIA - 2019, Percentage: 94%</p>
+        <div class="education-item">
+            <p><strong>Class 10</strong>: Science Stream</p>
+            <p>Hayde Heritage Academy, Kotdwara, INDIA - 2019, Percentage: 94%</p>
+        </div>
     </section>
 
-    <section id="certifications">
+    <section id="certifications" class="content">
         <h2>Certifications</h2>
         <ul>
             <li>3D SWYMER ASSOCIATE</li>
@@ -76,7 +95,7 @@
         </ul>
     </section>
 
-    <section id="involvement">
+    <section id="involvement" class="content">
         <h2>Involvement</h2>
         <ul>
             <li>Student Affiliate - Royal Aeronautical Society</li>
@@ -84,7 +103,7 @@
         </ul>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="content">
         <h2>Skills</h2>
         <ul>
             <li>Languages: Fluent in English and Hindi</li>
@@ -93,7 +112,7 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="content contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:tusharmongia.ae22@rvce.edu.in">tusharmongia.ae22@rvce.edu.in</a></p>
         <p>Phone: +91 7895172275</p>
@@ -107,4 +126,6 @@
 </html>
 
 
-You can create these files (index.html and styles.css) and upload them to your web hosting service to get your website up and running. Let me know if you need any additional features or modifications!
+### Enhanced Styles.css
+
+css
