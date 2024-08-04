@@ -1,90 +1,61 @@
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #FF5733;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    background: #FFA07A;
-    padding: 0.5rem 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #000;
     font-weight: bold;
 }
 
-.hero {
-    background: #333;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
 }
 
 .content {
-    padding: 2rem;
-    background: #fff;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
 }
 
-h2 {
-    color: #FF5733;
-    margin-top: 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-.job, .project, .education-item {
-    margin-bottom: 2rem;
-}
-
-.contact {
-    text-align: center;
+.content.active {
+    display: block;
 }
 
 footer {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 1rem 0;
-    background: #FF5733;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
+
 
 
